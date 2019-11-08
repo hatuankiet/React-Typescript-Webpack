@@ -2,7 +2,7 @@
   "name": "a",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "webpack.config.js --open",
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
@@ -28,11 +28,14 @@
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "ts-loader": "^6.2.1",
+    "tslint": "^5.20.1",
+    "tslint-loader": "^3.5.4",
+    "tslint-react": "^4.1.0",
     "typescript": "^3.6.4"
   },
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --open"
   },
-  "author": "",
+  "author": "ha kiet",
   "license": "ISC"
 }

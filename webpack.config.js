@@ -8,6 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, "build"),
         filename: "bundle.js"
     },
+    watch: true,
     module: {
         rules: [
             {
@@ -21,7 +22,7 @@ module.exports = {
             },
             {
                 test: /\.(sc|sa|c)ss$/,
-                use : [
+                use: [
                     "style-loader",
                     "css-loader",
                     "sass-loader"
@@ -31,11 +32,11 @@ module.exports = {
     },
     plugins: [
         new htmlWebpackPlugin({
-            template: "./index.html",   
+            template: "./src/index.html",
         }),
     ],
     devtool: "source-map",
     resolve: {
-        extensions: [".js", ".tsx", ".ts",".json"]
+        extensions: [".js", ".tsx", ".ts", ".json"]
     }
 }
